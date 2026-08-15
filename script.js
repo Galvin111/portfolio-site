@@ -208,7 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
   contactTriggers.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      contactModal.classList.add('active');
+      if (resumeModal) resumeModal.classList.remove('active');
+      if (contactModal) contactModal.classList.add('active');
     });
   });
 
@@ -226,11 +227,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Copy Email Button
+  // 7. Resume Modal Logic
+  const resumeModal = document.getElementById('resume-modal');
+  const closeResumeModalBtn = document.getElementById('close-resume-modal');
+  const resumeTriggers = document.querySelectorAll('.open-resume-trigger');
+
+  resumeTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      // If clicked with modifier key or middle click, allow default link behavior
+      if (e.ctrlKey || e.metaKey || e.button === 1) return;
+      
+      // If modal exists on page, open modal instead of hard navigation
+      if (resumeModal) {
+        e.preventDefault();
+        if (contactModal) contactModal.classList.remove('active');
+        resumeModal.classList.add('active');
+      }
+    });
+  });
+
+  if (closeResumeModalBtn) {
+    closeResumeModalBtn.addEventListener('click', () => {
+      resumeModal.classList.remove('active');
+    });
+  }
+
+  if (resumeModal) {
+    resumeModal.addEventListener('click', (e) => {
+      if (e.target === resumeModal) {
+        resumeModal.classList.remove('active');
+      }
+    });
+  }
+
+  // Global Escape key listener to close modals
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (contactModal) contactModal.classList.remove('active');
+      if (resumeModal) resumeModal.classList.remove('active');
+    }
+  });
+
+  // 8. Copy Email Button
   const copyEmailBtn = document.getElementById('copy-email-btn');
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      const email = 'galvin@creativepipeline.design';
+      const email = 'galvinventurina@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
         const originalText = copyEmailBtn.textContent;
         copyEmailBtn.textContent = 'Copied!';
@@ -246,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 8. Footer Live Clock Readout (NYC Time)
+  // 9. Footer Live Clock Readout (NYC Time)
   const timeClock = document.getElementById('time-clock');
   function updateClock() {
     if (!timeClock) return;

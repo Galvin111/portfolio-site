@@ -40,9 +40,14 @@
           <span class="dot"></span>
           <span>galvin <span class="font-serif-italic text-red">//</span> creative pipeline</span>
         </div>
-        <button class="nav-cta open-contact-trigger font-mono" id="hero-talk-btn">
-          Let's Talk ↗
-        </button>
+        <div class="hero-top-actions">
+          <button class="nav-cta open-resume-trigger font-mono" id="hero-resume-btn">
+            Resume 📄
+          </button>
+          <button class="nav-cta nav-cta-accent open-contact-trigger font-mono" id="hero-talk-btn">
+            Let's Talk ↗
+          </button>
+        </div>
       </div>
 
       <div class="hero-meta font-mono" style="margin-top: 3rem;">
@@ -91,9 +96,28 @@
 
           <div class="bio-skills-tags font-mono">
             <span class="bio-tag">Social Media Manager</span>
+            <span class="bio-tag">AI Specialist</span>
             <span class="bio-tag">Video Editor</span>
             <span class="bio-tag">Graphic Designer</span>
             <span class="bio-tag">Web Builder</span>
+          </div>
+
+          <!-- Resume Link & Actions in Bio -->
+          <div class="bio-resume-box">
+            <button class="bio-resume-btn open-resume-trigger font-mono" id="bio-view-resume-btn">
+              <svg class="resume-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>View Full Resume</span>
+              <span class="resume-arrow font-mono">↗</span>
+            </button>
+            <a href="resume.html" target="_blank" class="bio-resume-link font-mono" title="Open full resume page">
+              <span>Open in new tab</span> ↗
+            </a>
           </div>
         </div>
 
@@ -372,10 +396,10 @@
   <footer>
     <div class="container footer-inner">
       <ul class="footer-socials font-mono">
+        <li><a href="resume.html" class="open-resume-trigger footer-resume-link">Resume 📄</a></li>
         <li><a href="https://www.linkedin.com/in/galvin-venturina-35bbb0377/" target="_blank"
             rel="noopener">LinkedIn</a></li>
         <li><a href="https://www.instagram.com/vin_vntrn/?__pwa=1" target="_blank" rel="noopener">Instagram</a></li>
-
       </ul>
       <div class="footer-time font-mono" id="local-time-readout">
         <span class="live-dot"></span>
@@ -383,6 +407,184 @@
       </div>
     </div>
   </footer>
+
+  <!-- RESUME MODAL -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-card resume-modal-card">
+      <button class="modal-close" id="close-resume-modal">&times;</button>
+      
+      <div class="modal-top-actions font-mono">
+        <span class="modal-tag-badge">// CURRICULUM VITAE</span>
+        <div class="modal-btn-group">
+          <button onclick="window.print()" class="modal-mini-btn">
+            <span>Print / PDF</span>
+          </button>
+          <a href="resume.html" target="_blank" class="modal-mini-btn highlight-mini">
+            <span>Standalone Page ↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="resume-modal-header">
+        <h2 class="resume-header-name font-display">GALVIN VENTURINA</h2>
+        <p class="resume-header-role font-mono">
+          SOCIAL MEDIA MANAGER <span class="text-red">•</span> AI SPECIALIST
+        </p>
+        <div class="resume-contacts font-mono">
+          <span class="contact-pill"><span class="pill-icon">📍</span> Pampanga, Philippines</span>
+          <a href="mailto:galvinventurina@gmail.com" class="contact-pill link-pill"><span class="pill-icon">✉️</span> galvinventurina@gmail.com</a>
+          <a href="tel:+639331842084" class="contact-pill link-pill"><span class="pill-icon">📞</span> +63 933 184 2084</a>
+          <a href="https://linkedin.com/in/galvin-venturina-35bbb0377" target="_blank" rel="noopener" class="contact-pill link-pill"><span class="pill-icon">🔗</span> LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="resume-modal-body">
+        
+        <!-- Summary -->
+        <div class="resume-section">
+          <h3 class="resume-section-title font-mono"><span class="title-num">01</span> // PROFESSIONAL SUMMARY</h3>
+          <p class="resume-summary-text">
+            Social Media Manager with <strong>1–3 years of experience</strong> growing brand presence for restaurant and e-commerce clients, combining content strategy with AI-driven workflows. Built a restaurant brand's online presence from the ground up to strong local recognition, supported another's brand awareness and website, and applied AI video automation to help generate <strong>$8.4K in e-commerce sales within 7 days</strong>. Currently a 3rd-year Computer Science student, bringing a technical edge to marketing and automation work.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="resume-section">
+          <h3 class="resume-section-title font-mono"><span class="title-num">02</span> // CORE SKILLS</h3>
+          <div class="resume-skills-grid">
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title font-mono">Social Media Strategy & Management</h4>
+              <p class="skill-cat-desc">Content calendars, brand voice, organic community growth & distribution</p>
+            </div>
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title font-mono text-red">AI Tools & Automation</h4>
+              <p class="skill-cat-desc">ChatGPT, Gemini Pro, AI video automation for product/marketing content</p>
+            </div>
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title font-mono">Design & Content Creation</h4>
+              <p class="skill-cat-desc">Canva Pro, Premiere Pro, DaVinci Resolve, graphic posters & menu art</p>
+            </div>
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title font-mono">Website Support & Web Builds</h4>
+              <p class="skill-cat-desc">Building and maintaining brand websites, responsive landing pages</p>
+            </div>
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title font-mono">Productivity & Collaboration</h4>
+              <p class="skill-cat-desc">Google Docs, Sheets, Drive, Gmail</p>
+            </div>
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title font-mono">Data-Driven Marketing</h4>
+              <p class="skill-cat-desc">Tracking engagement, ROAS metrics and sales performance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="resume-section">
+          <h3 class="resume-section-title font-mono"><span class="title-num">03</span> // EXPERIENCE</h3>
+          
+          <div class="resume-experience-list">
+            
+            <div class="resume-experience-item">
+              <div class="exp-header">
+                <div>
+                  <h4 class="exp-role font-display">Social Media Manager</h4>
+                  <div class="exp-company font-mono"><span class="text-red">Hello Lumpia</span> • Jacksonville, FL</div>
+                </div>
+                <div class="exp-dates font-mono">Nov 2025 – Aug 2026</div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Built the brand's social media presence from scratch, growing it into a well-known Filipino restaurant name in Jacksonville, Florida.</li>
+                <li>Planned and produced content using Canva Pro and AI tools to establish consistent brand voice and visual identity.</li>
+                <li>Managed day-to-day content strategy and community engagement across platforms.</li>
+              </ul>
+              <div class="exp-tags font-mono">
+                <span class="exp-tag">Brand Launch</span>
+                <span class="exp-tag">Canva Pro</span>
+                <span class="exp-tag">AI Workflows</span>
+              </div>
+            </div>
+
+            <div class="resume-experience-item">
+              <div class="exp-header">
+                <div>
+                  <h4 class="exp-role font-display">Social Media Manager</h4>
+                  <div class="exp-company font-mono"><span class="text-red">Go Go Curry</span> • Times Square, NYC</div>
+                </div>
+                <div class="exp-dates font-mono">Sept 2024 – Jun 2026</div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Strengthened brand awareness for a Japanese curry restaurant through consistent, targeted social content.</li>
+                <li>Supported management of the brand's website alongside social media efforts.</li>
+                <li>Used AI tools (ChatGPT, Gemini Pro) to streamline content planning and production.</li>
+              </ul>
+              <div class="exp-tags font-mono">
+                <span class="exp-tag">4.2M+ Views</span>
+                <span class="exp-tag">Website Support</span>
+                <span class="exp-tag">AI Workflows</span>
+              </div>
+            </div>
+
+            <div class="resume-experience-item">
+              <div class="exp-header">
+                <div>
+                  <h4 class="exp-role font-display">AI Video Automation Specialist</h4>
+                  <div class="exp-company font-mono"><span class="text-red">E-Commerce Team</span></div>
+                </div>
+                <div class="exp-dates font-mono">May 2026 – Aug 2026</div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Led AI-driven video automation for product content, supporting the team's sales operations.</li>
+                <li>Contributed to <strong>$8,400 (USD) in sales and 94 products sold within a 7-day period</strong>.</li>
+                <li>Applied AI tools to accelerate video production for product marketing at scale.</li>
+              </ul>
+              <div class="exp-tags font-mono">
+                <span class="exp-tag">$8.4K Sales in 7 Days</span>
+                <span class="exp-tag">94 Products Sold</span>
+                <span class="exp-tag">AI Video Automation</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education & Achievements -->
+        <div class="resume-dual-grid">
+          <div class="resume-section">
+            <h3 class="resume-section-title font-mono"><span class="title-num">04</span> // EDUCATION</h3>
+            <div class="resume-edu-card">
+              <h4 class="edu-degree font-display">Bachelor of Science in Computer Science</h4>
+              <div class="edu-sub font-mono text-red">In Progress — 3rd Year</div>
+              <p class="edu-note">Bringing technical edge, code, and workflow automation to marketing.</p>
+            </div>
+            <div class="resume-edu-card" style="margin-top: 0.75rem;">
+              <h4 class="edu-degree font-display" style="font-size: 1.05rem;">High School Diploma</h4>
+              <div class="edu-sub font-mono">Completed</div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h3 class="resume-section-title font-mono"><span class="title-num">05</span> // AWARDS</h3>
+            <div class="resume-award-card">
+              <div class="award-icon font-display">🏆</div>
+              <div>
+                <h4 class="award-title font-display">Hackathon Award Recipient</h4>
+                <p class="award-desc">Multiple hackathon participations with award-winning results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer-contact font-mono">
+        <a href="mailto:galvinventurina@gmail.com" class="btn-primary" style="width: 100%; justify-content: center;">
+          <span>Get in touch with Galvin →</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
 
   <!-- CONTACT MODAL -->
   <div class="modal-overlay" id="contact-modal">

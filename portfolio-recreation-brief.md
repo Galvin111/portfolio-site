@@ -110,14 +110,6 @@ Socials/handles only — no extra links, matches reference's restraint.
 
 ---
 
-## 5. Tool recommendation: Antigravity vs cmux
-
-**Go with Antigravity — you're already using it, and it's the right category of tool for this.**
-
-- You already have Antigravity in your workflow for generating website layouts — no reason to switch away for this build. It's a full visual, agent-first IDE: you can describe the design, see it render, iterate visually, and it can test in-browser as it builds. That maps directly onto "I want to recreate this specific site visually."
-- **cmux is a different category of tool** — it's not a design/coding IDE itself. It's a terminal *orchestration* layer for people already running multiple AI coding agents (like Claude Code, Codex, etc.) in parallel across different projects, mainly built for developers juggling several concurrent agent sessions from the terminal. For a single portfolio site build, that's more infrastructure than you need — it would add a learning curve (Swift/macOS-native terminal, multi-agent panes) without a payoff for a solo, single-site project.
-
-Stick with Antigravity for this build.
 
 ---
 
