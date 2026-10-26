@@ -1,616 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galvin — Creative Pipeline, Social, Video & Web</title>
-  <meta name="description"
-    content="Personal portfolio of Galvin: 20-year-old Social Media Manager, Video Editor, Graphic Designer, and Web Builder.">
-
-  <!-- High-Fashion / Editorial Google Fonts -->
+  <title>Galvin Venturina — social, video, design and web</title>
+  <meta name="description" content="Galvin Venturina designs the content, runs the accounts and builds the sites for restaurant and e-commerce brands. Based in Pampanga, Philippines.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- SCROLL PROGRESS INDICATOR -->
-  <div id="scroll-progress"></div>
+  <a class="skip-link" href="#work">Skip to the work</a>
 
-  <!-- DYNAMIC BACKGROUND CANVAS & MOUSE SPOTLIGHT GLOW -->
-  <div class="ambient-bg-glow">
-    <div class="glow-orb orb-navy" id="orb-1"></div>
-    <div class="glow-orb orb-red" id="orb-2"></div>
-    <div class="bg-grid-pattern"></div>
-    <div class="bg-noise-layer"></div>
-  </div>
-  <div id="cursor-spotlight"></div>
-
-  <!-- HERO SECTION (No navigation bar) -->
-  <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero-top-bar">
-        <div class="logo font-mono">
-          <span class="dot"></span>
-          <span>galvin <span class="font-serif-italic text-red">//</span> creative pipeline</span>
-        </div>
-        <div class="hero-top-actions">
-          <button class="nav-cta open-resume-trigger font-mono" id="hero-resume-btn">
-            Resume 📄
-          </button>
-          <button class="nav-cta nav-cta-accent open-contact-trigger font-mono" id="hero-talk-btn">
-            Let's Talk ↗
-          </button>
-        </div>
-      </div>
-
-      <div class="hero-meta font-mono" style="margin-top: 3rem;">
-        <span class="pulse-icon">●</span> CREATIVE PIPELINE & DEVELOPMENT
-      </div>
-
-      <h1 class="hero-headline font-display">
-        the one who <span class="font-serif-italic text-red">designs</span> it,
-        <span class="font-display text-navy-underline">posts</span> it, and
-        <span class="font-serif-italic text-red">builds</span> where it lives
-      </h1>
-
-      <a href="#about-galvin" class="hero-soft-cta" id="scroll-cue-btn">
-        <span class="font-mono">Have a look</span>
-        <div class="arrow-icon">↓</div>
-      </a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="#top" class="wordmark">Galvin Venturina</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- GALVIN BIO / INTRODUCTION SECTION -->
-  <section class="bio-section light-section" id="about-galvin">
-    <div class="container">
-      <div class="bio-layout">
+  <main id="top">
 
-        <!-- Bio Content -->
-        <div class="bio-content">
-          <div class="section-header dark-header">
-            <span class="section-number font-mono">00</span>
-            <span class="section-title font-mono">// MEET GALVIN</span>
-          </div>
-
-          <h2 class="bio-title font-display">
-            Hey, I'm <span class="font-serif-italic text-red-dark">Galvin</span>.
-          </h2>
-
-          <div class="bio-age-badge font-mono">
-            <span class="spider-dot">🕷️</span> 20 YEARS OLD • FRIENDLY NEIGHBORHOOD CREATIVE
-          </div>
-
-          <p class="bio-text">
-            I'm 20 years old and as <span class="font-serif-italic text-red-dark">friendly as Spider-Man could
-              be</span>. Whether it's crafting viral reels for iconic food spots in NYC and FL, designing sharp visual
-            identities, or engineering custom web platforms that convert, I bring positive energy and serious craft to
-            every single build.
-          </p>
-
-          <div class="bio-skills-tags font-mono">
-            <span class="bio-tag">Social Media Manager</span>
-            <span class="bio-tag">AI Specialist</span>
-            <span class="bio-tag">Video Editor</span>
-            <span class="bio-tag">Graphic Designer</span>
-            <span class="bio-tag">Web Builder</span>
-          </div>
-
-          <!-- Resume Link & Actions in Bio -->
-          <div class="bio-resume-box">
-            <button class="bio-resume-btn open-resume-trigger font-mono" id="bio-view-resume-btn">
-              <svg class="resume-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-                <polyline points="10 9 9 9 8 9"></polyline>
-              </svg>
-              <span>View Full Resume</span>
-              <span class="resume-arrow font-mono">↗</span>
-            </button>
-            <a href="resume.html" target="_blank" class="bio-resume-link font-mono" title="Open full resume page">
-              <span>Open in new tab</span> ↗
-            </a>
-          </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <h1 class="hero-line">
+          <span class="hl">the one who designs it,</span>
+          <span class="hl">posts it, and builds</span>
+          <span class="hl">where it lives</span>
+        </h1>
+        <div class="hero-foot">
+          <p class="hero-sub">Social media, video, design and websites for restaurant and e‑commerce brands. Based in Pampanga, Philippines, working with clients in the US.</p>
+          <a href="#work" class="text-link">Have a look</a>
         </div>
-
-        <!-- Interactive Animated Spider-Man Doodle Graphic -->
-        <div class="spiderman-doodle-wrapper">
-          <div class="spiderman-card" id="spiderman-card">
-
-            <svg class="web-backdrop" viewBox="0 0 200 200">
-              <path d="M100 0 L100 200 M0 100 L200 100 M29 29 L171 171 M171 29 L29 171" stroke="#E63946"
-                stroke-width="0.75" stroke-dasharray="3 3" opacity="0.3" />
-              <circle cx="100" cy="100" r="30" fill="none" stroke="#E63946" stroke-width="0.75" opacity="0.25" />
-              <circle cx="100" cy="100" r="65" fill="none" stroke="#E63946" stroke-width="0.75" opacity="0.2" />
-              <circle cx="100" cy="100" r="95" fill="none" stroke="#E63946" stroke-width="0.75" opacity="0.15" />
-            </svg>
-
-            <svg class="spiderman-mask-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M60 10 C 15 10, 10 50, 10 85 C 10 115, 40 135, 60 135 C 80 135, 110 115, 110 85 C 110 50, 105 10, 60 10 Z"
-                fill="#E63946" stroke="#0B0C10" stroke-width="4.5" class="mask-base" />
-              <path
-                d="M60 10 L60 135 M10 85 L110 85 M22 45 C40 55 80 55 98 45 M15 70 C40 78 80 78 105 70 M20 100 C40 105 80 105 100 100"
-                stroke="#0B0C10" stroke-width="2" stroke-linecap="round" opacity="0.65" class="mask-webbing" />
-
-              <path d="M22 62 C 32 58, 48 68, 52 78 C 50 88, 30 92, 22 84 C 18 78, 18 68, 22 62 Z" fill="#0B0C10"
-                class="eye-frame-left" />
-              <path d="M25 65 C 33 62, 45 70, 48 77 C 46 84, 32 88, 25 81 C 22 76, 22 70, 25 65 Z" fill="#FFFFFF"
-                class="eye-lens-left" />
-
-              <path d="M98 62 C 88 58, 72 68, 68 78 C 70 88, 90 92, 98 84 C 102 78, 102 68, 98 62 Z" fill="#0B0C10"
-                class="eye-frame-right" />
-              <path d="M95 65 C 87 62, 75 70, 72 77 C 74 84, 88 88, 95 81 C 98 76, 98 70, 95 65 Z" fill="#FFFFFF"
-                class="eye-lens-right" />
-            </svg>
-
-            <div class="spiderman-label font-mono">HOVER ME 🕸️</div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- JOURNEY / ABOUT SECTION -->
-  <section class="journey-section" id="journey">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number font-mono">01</span>
-        <span class="section-title font-mono">// Origin & <span
-            class="font-serif-italic text-primary">Craft</span></span>
-      </div>
+    <!-- ABOUT + JOURNEY -->
+    <section class="journey" id="about" aria-labelledby="about-title">
+      <div class="wrap journey-grid">
+        <div class="journey-copy">
+          <h2 id="about-title" class="section-title">Hey, I'm Galvin.</h2>
+          <p class="lede">I make the posts, run the accounts and build the sites, so a brand gets one person who sees the whole picture. I'm also a 3rd‑year Computer Science student, which is why most of my workflow runs on AI and automation.</p>
 
-      <div class="journey-layout">
-        <!-- Story Beats -->
-        <div class="journey-timeline">
-
-          <div class="story-beat" data-beat="graphic">
-            <span class="story-time font-mono">5 years ago</span>
-            <p class="story-text">Started in <span class="font-serif-italic text-red">graphic design</span>.</p>
-          </div>
-
-          <div class="story-beat" data-beat="video">
-            <span class="story-time font-mono">Video followed.</span>
-            <p class="story-text">Picked up <span class="font-serif-italic text-red">editing</span>. Same eye, moving
-              footage.</p>
-          </div>
-
-          <div class="story-beat" data-beat="social">
-            <span class="story-time font-mono">Then I went where the work lives.</span>
-            <p class="story-text">Started managing <span class="font-display">social</span> — not just making the asset,
-              <span class="font-serif-italic text-red">owning</span> the account.
-            </p>
-          </div>
-
-          <div class="story-beat" data-beat="web">
-            <span class="story-time font-mono">So I learned to build the rest.</span>
-            <p class="story-text">Websites came last — the <span class="font-serif-italic text-red">digital
-                platforms</span> these brands actually run on.</p>
-          </div>
-
+          <ol class="beats">
+            <li class="beat" data-beat="ring">
+              <span class="beat-when">5 years ago</span>
+              <p>Started in graphic design.</p>
+            </li>
+            <li class="beat" data-beat="play">
+              <span class="beat-when">Video followed.</span>
+              <p>Picked up editing. Same eye, moving footage.</p>
+            </li>
+            <li class="beat" data-beat="heart">
+              <span class="beat-when">Then I went where the work lives.</span>
+              <p>Started managing social — not just making the asset, owning the account.</p>
+            </li>
+            <li class="beat" data-beat="share">
+              <span class="beat-when">So I learned to build the rest.</span>
+              <p>Websites came last — the platforms these brands actually run on.</p>
+            </li>
+          </ol>
         </div>
 
-        <!-- Interactive Platform Iconography Canvas -->
-        <div class="platform-canvas-container">
-          <div class="platform-canvas-grid"></div>
-          <div class="platform-icons-wrapper">
-
-            <div class="platform-icon-item" id="icon-graphic" data-beat-target="graphic">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="3" y1="9" x2="21" y2="9"></line>
-                <line x1="9" y1="21" x2="9" y2="9"></line>
-              </svg>
-              <span class="font-mono">GRAPHIC</span>
-            </div>
-
-            <div class="platform-icon-item" id="icon-video" data-beat-target="video">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-              <span class="font-mono">VIDEO</span>
-            </div>
-
-            <div class="platform-icon-item" id="icon-social" data-beat-target="social">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                </path>
-              </svg>
-              <span class="font-mono">SOCIAL</span>
-            </div>
-
-            <div class="platform-icon-item" id="icon-web" data-beat-target="web">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                </path>
-              </svg>
-              <span class="font-mono">WEB</span>
-            </div>
-
+        <div class="icon-stage" aria-hidden="true">
+          <div class="icon-panel">
+            <svg class="pi" data-icon="ring" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" class="pi-dash"/><circle cx="24" cy="24" r="13"/></svg>
+            <svg class="pi" data-icon="play" viewBox="0 0 48 48"><path d="M17 12.5v23L36 24z"/></svg>
+            <svg class="pi" data-icon="heart" viewBox="0 0 48 48"><path d="M24 39S8 29.6 8 18.6C8 13.3 12 9.5 16.8 9.5c3.1 0 5.6 1.7 7.2 4.2 1.6-2.5 4.1-4.2 7.2-4.2C36 9.5 40 13.3 40 18.6 40 29.6 24 39 24 39z"/></svg>
+            <svg class="pi" data-icon="share" viewBox="0 0 48 48"><path d="M41 8 21 27M41 8 29 41l-8-14-14-8z"/></svg>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PINNED STICKY STACKED CARDS SELECTED WORKS SECTION (WHITE BG + STACKED RED CARDS) -->
-  <section class="works-reimagined-section white-works-bg" id="work">
-    <div class="works-pinned-viewport">
+    <!-- WORK -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <h2 id="work-title" class="section-title">Selected work</h2>
 
-      <!-- Spider-Man Web Slinging Path SVG -->
-      <svg class="spidey-web-pull-svg" id="spidey-web-pull-svg" viewBox="0 0 1000 800" preserveAspectRatio="none">
-        <path id="web-thread-line" d="M 150 200 Q 400 150 700 350" stroke="#E63946" stroke-width="3" fill="none"
-          stroke-dasharray="6 6" />
-        <circle id="web-snap-dot" cx="700" cy="350" r="8" fill="#E63946" />
-      </svg>
-
-      <div class="container">
-        <div class="works-sticky-layout">
-
-          <!-- Left Side: Sticky Description & Step Progress -->
-          <div class="works-left-sticky">
-            <div class="section-header dark-header">
-              <span class="section-number font-mono">02</span>
-              <span class="section-title font-mono">// SELECTED <span
-                  class="font-serif-italic text-red-dark">WORKS</span></span>
-            </div>
-
-            <h2 class="works-main-title font-display">
-              Selected <span class="font-serif-italic text-red-dark">Workflows</span> & Pipeline
-            </h2>
-
-            <!-- Active Work Description Container -->
-            <div class="active-work-description-box" id="active-work-desc-box">
-              <div class="work-step-indicator font-mono" id="work-step-indicator">
-                WORK 01 / 05
-              </div>
-
-              <h3 class="active-work-title font-display" id="active-work-title">
-                Video Editing & Reel Production
-              </h3>
-
-              <p class="active-work-details" id="active-work-details">
-                Cutting high-retention short-form Reels and TikToks for restaurant brands like Go Go Curry Times Square.
-                Focused on punchy sound design, seamless transitions, and appetising motion graphics that drive over
-                4.2M views.
-              </p>
-
-              <div class="active-work-meta font-mono" id="active-work-meta">
-                <span class="meta-badge">4.2M+ Views</span>
-                <span class="meta-badge">Premier Pro / DaVinci</span>
-                <span class="meta-badge">Sound Design</span>
-              </div>
-            </div>
+        <!-- Case 1: Hello Lumpia -->
+        <article class="case" aria-labelledby="hl-title">
+          <div class="case-text">
+            <p class="case-meta">Social media · Nov 2025 – Aug 2026</p>
+            <h3 id="hl-title" class="case-title">Hello Lumpia</h3>
+            <p class="case-where">Filipino kitchen in Jacksonville, Florida</p>
+            <p>I built their social presence from scratch and helped turn a new Filipino kitchen into a name people know around Jacksonville.</p>
+            <ul class="case-list">
+              <li>Content planned and designed in Canva Pro, with AI tools to keep a consistent voice and look</li>
+              <li>Menu drops, party‑tray promos, and customer reviews turned into posts</li>
+              <li>Day‑to‑day content strategy and community engagement</li>
+              <li>Featured in collab Reels with Yelp Jacksonville and Stuff To Do in Jacksonville</li>
+            </ul>
+            <a class="text-link" href="https://www.instagram.com/hello.lumpia/" target="_blank" rel="noopener">See @hello.lumpia on Instagram</a>
           </div>
 
-          <!-- Right Side: Stacked Red Accent Cards Deck -->
-          <div class="works-right-cards-deck" id="works-right-cards-deck">
+          <div class="feed" role="list" aria-label="Posts I designed for Hello Lumpia">
+            <figure role="listitem"><img src="assets/work/hl_turon.jpg" alt="Turon post: banana lumpia with caramel drizzle over a red title band" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_party_trays.jpg" alt="Party trays catering post with vegetable lumpia and chicken caldereta prices" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_review_google.jpg" alt="Google review post: 'You said it. We framed it.'" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_lumpia.jpg" alt="Authentic Filipino lumpia menu post priced at $9.50" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_review_yelp.jpg" alt="Yelp review post: 'Good spot for some Filipino food. Nice and clean.'" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_calamansi.jpg" alt="Mango calamansi juice product post" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_feeding_crowd.jpg" alt="'Feeding a crowd? Hello, tray.' party tray post" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_party_party.jpg" alt="'Party party party' tray promo from $54" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem"><img src="assets/work/hl_review_crunchy.jpg" alt="Yelp review post: 'Heard you loud and crunchy.'" loading="lazy" width="800" height="1000"></figure>
+          </div>
+        </article>
 
-            <!-- Card 1: Video Editing -->
-            <div class="spidey-red-card in-stack" data-index="0" data-title="Video Editing & Reel Production"
-              data-details="Cutting high-retention short-form Reels and TikToks for restaurant brands like Go Go Curry Times Square. Focused on punchy sound design, seamless transitions, and appetising motion graphics that drive over 4.2M views."
-              data-tags="4.2M+ Views, Premier Pro, Sound Design">
-              <div class="red-card-badge font-mono">01 // VIDEO EDITING</div>
-              <div class="red-card-image-box">
-                <img src="assets/images/workflow_video_editing.png" alt="Video Editing Workflow" class="red-card-img">
-              </div>
-              <div class="red-card-info">
-                <h4 class="red-card-heading font-display">Short-Form Video & Reel Cuts</h4>
-                <p class="red-card-sub">High-retention editing, sound FX, food motion graphics.</p>
-              </div>
-            </div>
-
-            <!-- Card 2: Graphic Poster -->
-            <div class="spidey-red-card waiting-in-deck" data-index="1" data-title="Graphic Posters & Brand Identity"
-              data-details="Crafting high-impact promotional posters, print collateral, and digital menu layouts for Hello Lumpia and Go Go Curry. Bold typography paired with sleek food art."
-              data-tags="Print & Digital, Typography, Menu Art">
-              <div class="red-card-badge font-mono">02 // GRAPHIC DESIGN</div>
-              <div class="red-card-image-box">
-                <img src="assets/images/workflow_graphic_poster.png" alt="Graphic Poster Workflow" class="red-card-img">
-              </div>
-              <div class="red-card-info">
-                <h4 class="red-card-heading font-display">Graphic Posters & Menu Art</h4>
-                <p class="red-card-sub">Bold editorial typography & modern brand collateral.</p>
-              </div>
-            </div>
-
-            <!-- Card 3: IG Feed & Publishing -->
-            <div class="spidey-red-card waiting-in-deck" data-index="2" data-title="Instagram Feed & Content Curation"
-              data-details="Managing full Instagram feeds from visual aesthetic grid curation to story highlight rings, captions, and publishing schedules to maintain a cohesive brand identity."
-              data-tags="Feed Curation, 350% Engagement, Story Highlights">
-              <div class="red-card-badge font-mono">03 // INSTAGRAM CURATION</div>
-              <div class="red-card-image-box">
-                <img src="assets/images/workflow_instagram_feed.png" alt="Instagram Feed Workflow" class="red-card-img">
-              </div>
-              <div class="red-card-info">
-                <h4 class="red-card-heading font-display">Instagram Feed & Content Grid</h4>
-                <p class="red-card-sub">Cohesive visual feed curation & brand management.</p>
-              </div>
-            </div>
-
-            <!-- Card 4: Web Building -->
-            <div class="spidey-red-card waiting-in-deck" data-index="3" data-title="Custom Web Platform Building"
-              data-details="Designing and engineering high-converting single-page portfolios and digital web menus. Fast loading, responsive across mobile, and built with clean code."
-              data-tags="HTML5/CSS3/JS, Custom UI, Mobile First">
-              <div class="red-card-badge font-mono">04 // WEB DEVELOPMENT</div>
-              <div class="red-card-image-box">
-                <img src="assets/images/workflow_web_building.png" alt="Web Development Workflow" class="red-card-img">
-              </div>
-              <div class="red-card-info">
-                <h4 class="red-card-heading font-display">Custom Web Applications</h4>
-                <p class="red-card-sub">Responsive digital menus & sleek portfolio builds.</p>
-              </div>
-            </div>
-
-            <!-- Card 5: Meta Ads -->
-            <div class="spidey-red-card waiting-in-deck" data-index="4" data-title="Meta Ads & Campaign Management"
-              data-details="Structuring and scaling paid Meta ad campaigns across Instagram and Facebook. Targeting food lovers with visual reels driving high ROAS and conversions."
-              data-tags="5.8x ROAS, Meta Ad Manager, Funnel Strategy">
-              <div class="red-card-badge font-mono">05 // META ADS CAMPAIGNS</div>
-              <div class="red-card-image-box">
-                <img src="assets/images/workflow_meta_ads.png" alt="Meta Ads Workflow" class="red-card-img">
-              </div>
-              <div class="red-card-info">
-                <h4 class="red-card-heading font-display">Meta Ads & Growth Strategy</h4>
-                <p class="red-card-sub">High-conversion targeted campaigns & ROAS optimization.</p>
-              </div>
-            </div>
-
+        <!-- Case 2: AI e-commerce video -->
+        <article class="case case-ai" aria-labelledby="ai-title">
+          <div class="case-text">
+            <p class="case-meta">AI video automation · May – Aug 2026</p>
+            <h3 id="ai-title" class="case-title">AI product videos for an e‑commerce team</h3>
+            <p>I led AI‑driven video automation for the team's product content, using AI tools to produce marketing videos at scale and keep the store's sales supplied with fresh creative.</p>
           </div>
 
+          <div class="result-card">
+            <p class="result-label">Team sales in one week, backed by the AI product videos</p>
+            <p class="result-big">$8,400</p>
+            <div class="result-row">
+              <div><span class="result-mid">94</span><span class="result-small">products sold</span></div>
+              <div><span class="result-mid">7</span><span class="result-small">days</span></div>
+            </div>
+            <!-- When sample videos are ready, add them here, e.g.
+                 <video src="assets/work/ecom_sample_1.mp4" muted playsinline loop controls></video> -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title" class="cta-line">Got a brand that needs a feed, a face, and a site? Let's talk.</h2>
+        <div class="cta-actions">
+          <a class="btn" href="mailto:galvinventurina@gmail.com">Email me</a>
+          <button class="btn btn-ghost" id="copy-email" type="button" data-email="galvinventurina@gmail.com">Copy email address</button>
+          <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
         </div>
+        <p class="cta-email">galvinventurina@gmail.com</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- CLOSING CTA SECTION -->
-  <section class="cta-section" id="contact">
-    <div class="container">
-      <div class="cta-content">
-        <h2 class="cta-headline font-display">
-          Got a brand that needs a <span class="font-serif-italic text-red">feed</span>, a <span
-            class="font-serif-italic text-red">face</span>, and a <span
-            class="font-serif-italic text-navy-glow">site</span>? Let's talk.
-        </h2>
-        <button class="btn-primary open-contact-trigger" id="cta-contact-btn">
-          <span class="font-mono">Get in touch with Galvin</span>
-          <span class="font-mono">→</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <ul class="footer-socials font-mono">
-        <li><a href="resume.html" class="open-resume-trigger footer-resume-link">Resume 📄</a></li>
-        <li><a href="https://www.linkedin.com/in/galvin-venturina-35bbb0377/" target="_blank"
-            rel="noopener">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/vin_vntrn/?__pwa=1" target="_blank" rel="noopener">Instagram</a></li>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/galvin-venturina-35bbb0377/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/vin_vntrn/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="resume.html">Resume</a></li>
       </ul>
-      <div class="footer-time font-mono" id="local-time-readout">
-        <span class="live-dot"></span>
-        <span>Times Square, NYC • <span id="time-clock">--:-- --</span></span>
-      </div>
+      <p class="local-time">Pampanga, PH — <time id="clock">--:--</time> local time</p>
     </div>
   </footer>
 
-  <!-- RESUME MODAL -->
-  <div class="modal-overlay" id="resume-modal">
-    <div class="modal-card resume-modal-card">
-      <button class="modal-close" id="close-resume-modal">&times;</button>
-      
-      <div class="modal-top-actions font-mono">
-        <span class="modal-tag-badge">// CURRICULUM VITAE</span>
-        <div class="modal-btn-group">
-          <button onclick="window.print()" class="modal-mini-btn">
-            <span>Print / PDF</span>
-          </button>
-          <a href="resume.html" target="_blank" class="modal-mini-btn highlight-mini">
-            <span>Standalone Page ↗</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="resume-modal-header">
-        <h2 class="resume-header-name font-display">GALVIN VENTURINA</h2>
-        <p class="resume-header-role font-mono">
-          SOCIAL MEDIA MANAGER <span class="text-red">•</span> AI SPECIALIST
-        </p>
-        <div class="resume-contacts font-mono">
-          <span class="contact-pill"><span class="pill-icon">📍</span> Pampanga, Philippines</span>
-          <a href="mailto:galvinventurina@gmail.com" class="contact-pill link-pill"><span class="pill-icon">✉️</span> galvinventurina@gmail.com</a>
-          <a href="tel:+639331842084" class="contact-pill link-pill"><span class="pill-icon">📞</span> +63 933 184 2084</a>
-          <a href="https://linkedin.com/in/galvin-venturina-35bbb0377" target="_blank" rel="noopener" class="contact-pill link-pill"><span class="pill-icon">🔗</span> LinkedIn ↗</a>
-        </div>
-      </div>
-
-      <div class="resume-modal-body">
-        
-        <!-- Summary -->
-        <div class="resume-section">
-          <h3 class="resume-section-title font-mono"><span class="title-num">01</span> // PROFESSIONAL SUMMARY</h3>
-          <p class="resume-summary-text">
-            Social Media Manager with <strong>1–3 years of experience</strong> growing brand presence for restaurant and e-commerce clients, combining content strategy with AI-driven workflows. Built a restaurant brand's online presence from the ground up to strong local recognition, supported another's brand awareness and website, and applied AI video automation to help generate <strong>$8.4K in e-commerce sales within 7 days</strong>. Currently a 3rd-year Computer Science student, bringing a technical edge to marketing and automation work.
-          </p>
-        </div>
-
-        <!-- Skills -->
-        <div class="resume-section">
-          <h3 class="resume-section-title font-mono"><span class="title-num">02</span> // CORE SKILLS</h3>
-          <div class="resume-skills-grid">
-            <div class="skill-category-card">
-              <h4 class="skill-cat-title font-mono">Social Media Strategy & Management</h4>
-              <p class="skill-cat-desc">Content calendars, brand voice, organic community growth & distribution</p>
-            </div>
-            <div class="skill-category-card">
-              <h4 class="skill-cat-title font-mono text-red">AI Tools & Automation</h4>
-              <p class="skill-cat-desc">ChatGPT, Gemini Pro, AI video automation for product/marketing content</p>
-            </div>
-            <div class="skill-category-card">
-              <h4 class="skill-cat-title font-mono">Design & Content Creation</h4>
-              <p class="skill-cat-desc">Canva Pro, Premiere Pro, DaVinci Resolve, graphic posters & menu art</p>
-            </div>
-            <div class="skill-category-card">
-              <h4 class="skill-cat-title font-mono">Website Support & Web Builds</h4>
-              <p class="skill-cat-desc">Building and maintaining brand websites, responsive landing pages</p>
-            </div>
-            <div class="skill-category-card">
-              <h4 class="skill-cat-title font-mono">Productivity & Collaboration</h4>
-              <p class="skill-cat-desc">Google Docs, Sheets, Drive, Gmail</p>
-            </div>
-            <div class="skill-category-card">
-              <h4 class="skill-cat-title font-mono">Data-Driven Marketing</h4>
-              <p class="skill-cat-desc">Tracking engagement, ROAS metrics and sales performance</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience -->
-        <div class="resume-section">
-          <h3 class="resume-section-title font-mono"><span class="title-num">03</span> // EXPERIENCE</h3>
-          
-          <div class="resume-experience-list">
-            
-            <div class="resume-experience-item">
-              <div class="exp-header">
-                <div>
-                  <h4 class="exp-role font-display">Social Media Manager</h4>
-                  <div class="exp-company font-mono"><span class="text-red">Hello Lumpia</span> • Jacksonville, FL</div>
-                </div>
-                <div class="exp-dates font-mono">Nov 2025 – Aug 2026</div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Built the brand's social media presence from scratch, growing it into a well-known Filipino restaurant name in Jacksonville, Florida.</li>
-                <li>Planned and produced content using Canva Pro and AI tools to establish consistent brand voice and visual identity.</li>
-                <li>Managed day-to-day content strategy and community engagement across platforms.</li>
-              </ul>
-              <div class="exp-tags font-mono">
-                <span class="exp-tag">Brand Launch</span>
-                <span class="exp-tag">Canva Pro</span>
-                <span class="exp-tag">AI Workflows</span>
-              </div>
-            </div>
-
-            <div class="resume-experience-item">
-              <div class="exp-header">
-                <div>
-                  <h4 class="exp-role font-display">Social Media Manager</h4>
-                  <div class="exp-company font-mono"><span class="text-red">Go Go Curry</span> • Times Square, NYC</div>
-                </div>
-                <div class="exp-dates font-mono">Sept 2024 – Jun 2026</div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Strengthened brand awareness for a Japanese curry restaurant through consistent, targeted social content.</li>
-                <li>Supported management of the brand's website alongside social media efforts.</li>
-                <li>Used AI tools (ChatGPT, Gemini Pro) to streamline content planning and production.</li>
-              </ul>
-              <div class="exp-tags font-mono">
-                <span class="exp-tag">4.2M+ Views</span>
-                <span class="exp-tag">Website Support</span>
-                <span class="exp-tag">AI Workflows</span>
-              </div>
-            </div>
-
-            <div class="resume-experience-item">
-              <div class="exp-header">
-                <div>
-                  <h4 class="exp-role font-display">AI Video Automation Specialist</h4>
-                  <div class="exp-company font-mono"><span class="text-red">E-Commerce Team</span></div>
-                </div>
-                <div class="exp-dates font-mono">May 2026 – Aug 2026</div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Led AI-driven video automation for product content, supporting the team's sales operations.</li>
-                <li>Contributed to <strong>$8,400 (USD) in sales and 94 products sold within a 7-day period</strong>.</li>
-                <li>Applied AI tools to accelerate video production for product marketing at scale.</li>
-              </ul>
-              <div class="exp-tags font-mono">
-                <span class="exp-tag">$8.4K Sales in 7 Days</span>
-                <span class="exp-tag">94 Products Sold</span>
-                <span class="exp-tag">AI Video Automation</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Education & Achievements -->
-        <div class="resume-dual-grid">
-          <div class="resume-section">
-            <h3 class="resume-section-title font-mono"><span class="title-num">04</span> // EDUCATION</h3>
-            <div class="resume-edu-card">
-              <h4 class="edu-degree font-display">Bachelor of Science in Computer Science</h4>
-              <div class="edu-sub font-mono text-red">In Progress — 3rd Year</div>
-              <p class="edu-note">Bringing technical edge, code, and workflow automation to marketing.</p>
-            </div>
-            <div class="resume-edu-card" style="margin-top: 0.75rem;">
-              <h4 class="edu-degree font-display" style="font-size: 1.05rem;">High School Diploma</h4>
-              <div class="edu-sub font-mono">Completed</div>
-            </div>
-          </div>
-
-          <div class="resume-section">
-            <h3 class="resume-section-title font-mono"><span class="title-num">05</span> // AWARDS</h3>
-            <div class="resume-award-card">
-              <div class="award-icon font-display">🏆</div>
-              <div>
-                <h4 class="award-title font-display">Hackathon Award Recipient</h4>
-                <p class="award-desc">Multiple hackathon participations with award-winning results.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="modal-footer-contact font-mono">
-        <a href="mailto:galvinventurina@gmail.com" class="btn-primary" style="width: 100%; justify-content: center;">
-          <span>Get in touch with Galvin →</span>
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- CONTACT MODAL -->
-  <div class="modal-overlay" id="contact-modal">
-    <div class="modal-card">
-      <button class="modal-close" id="close-contact-modal">&times;</button>
-      <h3 class="modal-title font-display">Let's Build Something</h3>
-      <p class="modal-subtitle font-mono">// Direct pipeline for feeds, visual content & web</p>
-
-      <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
-        Reach out directly to Galvin for social media strategy, video editing, graphic design, or web builds:
-      </p>
-
-      <div class="contact-email-box">
-        <span class="contact-email-text font-mono">galvinventurina@gmail.com</span>
-        <button class="copy-btn font-mono" id="copy-email-btn">Copy Email</button>
-      </div>
-
-      <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-        <a href="mailto:galvinventurina@gmail.com" class="btn-primary" style="width: 100%; justify-content: center;">
-          <span class="font-mono">Send Direct Email</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <script src="script.js"></script>
 </body>
-
 </html>

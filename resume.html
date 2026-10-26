@@ -1,366 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galvin Venturina — Resume | Social Media Manager & AI Specialist</title>
-  <meta name="description"
-    content="Professional Resume of Galvin Venturina: Social Media Manager, AI Specialist, Video Editor, and CS Student.">
-
-  <!-- High-Fashion / Editorial Google Fonts -->
+  <title>Galvin Venturina — Resume</title>
+  <meta name="description" content="Resume of Galvin Venturina: social media manager and AI specialist based in Pampanga, Philippines.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Standalone Resume Page Specific Styling */
-    .resume-page-wrapper {
-      min-height: 100vh;
-      padding: 3rem 0 6rem 0;
-      position: relative;
-      z-index: 2;
-    }
-
-    .resume-top-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 2.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border-line);
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      color: var(--text-muted);
-      font-size: 0.88rem;
-      padding: 0.5rem 1rem;
-      border: 1px solid var(--border-line);
-      border-radius: 100px;
-      transition: all var(--transition-fast);
-      background: rgba(255, 255, 255, 0.03);
-    }
-
-    .back-btn:hover {
-      color: var(--accent-red);
-      border-color: var(--accent-red);
-      background: rgba(230, 57, 70, 0.08);
-      transform: translateX(-3px);
-    }
-
-    .resume-action-btns {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .action-btn-secondary {
-      font-size: 0.85rem;
-      padding: 0.55rem 1.25rem;
-      border: 1px solid var(--border-line);
-      border-radius: 100px;
-      color: var(--text-primary);
-      background: rgba(255, 255, 255, 0.04);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all var(--transition-fast);
-    }
-
-    .action-btn-secondary:hover {
-      border-color: var(--accent-red);
-      background: var(--accent-red);
-      color: #FFFFFF;
-      box-shadow: 0 0 15px var(--accent-red-glow);
-    }
-
-    /* Print styling */
-    @media print {
-      body {
-        background: #FFFFFF !important;
-        color: #000000 !important;
-      }
-      .ambient-bg-glow, #scroll-progress, #cursor-spotlight, .resume-top-nav, footer {
-        display: none !important;
-      }
-      .resume-page-wrapper {
-        padding: 0 !important;
-      }
-      .resume-container-card {
-        border: none !important;
-        box-shadow: none !important;
-        background: #FFFFFF !important;
-        color: #000000 !important;
-        padding: 0 !important;
-      }
-      .resume-header-name {
-        color: #000000 !important;
-      }
-      .resume-tag, .meta-badge {
-        border: 1px solid #CCC !important;
-        background: #F5F5F5 !important;
-        color: #000000 !important;
-      }
-      .text-red, .text-red-dark {
-        color: #D90429 !important;
-      }
-    }
-  </style>
 </head>
-
 <body>
-  <!-- DYNAMIC BACKGROUND CANVAS & MOUSE SPOTLIGHT GLOW -->
-  <div class="ambient-bg-glow">
-    <div class="glow-orb orb-navy" id="orb-1"></div>
-    <div class="glow-orb orb-red" id="orb-2"></div>
-    <div class="bg-grid-pattern"></div>
-    <div class="bg-noise-layer"></div>
-  </div>
-  <div id="cursor-spotlight"></div>
 
-  <div class="resume-page-wrapper">
-    <div class="container">
-      
-      <!-- Top Nav -->
-      <div class="resume-top-nav">
-        <a href="index.html" class="back-btn font-mono">
-          <span>←</span> Back to Portfolio
-        </a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="index.html" class="wordmark">Galvin Venturina</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html#work">Work</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+        <a href="index.html#contact" class="nav-contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <div class="resume-action-btns font-mono">
-          <button onclick="window.print()" class="action-btn-secondary" id="print-resume-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="6 9 6 2 18 2 18 9"></polyline>
-              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-              <rect x="6" y="14" width="12" height="8"></rect>
-            </svg>
-            <span>Print / Save PDF</span>
-          </button>
-          <a href="mailto:galvinventurina@gmail.com" class="action-btn-secondary" style="border-color: var(--accent-navy);">
-            <span>Hire Galvin ↗</span>
-          </a>
+  <main class="resume-page">
+    <div class="wrap resume-wrap">
+
+      <div class="resume-top">
+        <div>
+          <h1 class="resume-name">Galvin Venturina</h1>
+          <p class="resume-role">Social Media Manager and AI Specialist</p>
+          <ul class="resume-contacts">
+            <li>Pampanga, Philippines</li>
+            <li><a href="mailto:galvinventurina@gmail.com">galvinventurina@gmail.com</a></li>
+            <li><a href="tel:+639331842084">+63 933 184 2084</a></li>
+            <li><a href="https://www.linkedin.com/in/galvin-venturina-35bbb0377/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="resume-actions">
+          <button class="btn" type="button" onclick="window.print()">Save as PDF</button>
+          <a class="btn btn-ghost" href="mailto:galvinventurina@gmail.com">Email me</a>
         </div>
       </div>
 
-      <!-- Main Resume Sheet Card -->
-      <div class="resume-container-card">
+      <section class="r-section">
+        <h2>Summary</h2>
+        <p class="r-summary">Social media manager with 1–3 years of experience growing brand presence for restaurant and e‑commerce clients, combining content strategy with AI‑driven workflows. Built a restaurant brand's online presence from the ground up to strong local recognition, supported another's brand awareness and website, and applied AI video automation to help generate <strong>$8.4K in e‑commerce sales within 7 days</strong>. Currently a 3rd‑year Computer Science student, bringing a technical edge to marketing and automation work. Available for contract and full‑time roles.</p>
+      </section>
 
-        <!-- RESUME HEADER -->
-        <header class="resume-header">
-          <div class="resume-header-top">
-            <div>
-              <h1 class="resume-header-name font-display">GALVIN VENTURINA</h1>
-              <p class="resume-header-role font-mono">
-                SOCIAL MEDIA MANAGER <span class="text-red">•</span> AI SPECIALIST
-              </p>
+      <section class="r-section">
+        <h2>Experience</h2>
+        <div>
+          <div class="job">
+            <div class="job-head">
+              <h3 class="job-role">Social Media Manager</h3>
+              <span class="job-dates">Nov 2025 – Aug 2026</span>
             </div>
-            <div class="resume-badge-status font-mono">
-              <span class="pulse-icon">●</span> AVAILABLE FOR CONTRACT & FULL-TIME
-            </div>
+            <p class="job-org">Hello Lumpia, Jacksonville, FL</p>
+            <ul>
+              <li>Built the brand's social media presence from scratch, growing it into a well‑known Filipino restaurant name in Jacksonville, Florida.</li>
+              <li>Planned and produced content in Canva Pro and with AI tools to establish a consistent brand voice and visual identity.</li>
+              <li>Managed day‑to‑day content strategy, publishing calendars and community engagement across platforms.</li>
+            </ul>
           </div>
 
-          <div class="resume-contacts font-mono">
-            <div class="contact-pill">
-              <span class="pill-icon">📍</span> Pampanga, Philippines
+          <div class="job">
+            <div class="job-head">
+              <h3 class="job-role">Social Media Manager</h3>
+              <span class="job-dates">Sept 2024 – Jun 2026</span>
             </div>
-            <a href="mailto:galvinventurina@gmail.com" class="contact-pill link-pill">
-              <span class="pill-icon">✉️</span> galvinventurina@gmail.com
-            </a>
-            <a href="tel:+639331842084" class="contact-pill link-pill">
-              <span class="pill-icon">📞</span> +63 933 184 2084
-            </a>
-            <a href="https://linkedin.com/in/galvin-venturina-35bbb0377" target="_blank" rel="noopener" class="contact-pill link-pill">
-              <span class="pill-icon">🔗</span> linkedin.com/in/galvin-venturina-35bbb0377
-            </a>
+            <p class="job-org">Go Go Curry, Times Square, New York City</p>
+            <ul>
+              <li>Strengthened brand awareness for a Japanese curry restaurant in Manhattan through consistent, targeted short‑form social content.</li>
+              <li>Built and managed the brand's website alongside ongoing social media work.</li>
+              <li>Used AI tools (ChatGPT, Gemini Pro) to speed up ideation, copywriting and content planning.</li>
+            </ul>
           </div>
-        </header>
 
-        <!-- PROFESSIONAL SUMMARY -->
-        <section class="resume-block">
-          <h2 class="resume-section-title font-mono">
-            <span class="title-num">01</span> // PROFESSIONAL SUMMARY
-          </h2>
-          <p class="resume-summary-text">
-            Social Media Manager with <strong>1–3 years of experience</strong> growing brand presence for restaurant and e-commerce clients, combining content strategy with AI-driven workflows. Built a restaurant brand's online presence from the ground up to strong local recognition, supported another's brand awareness and website, and applied AI video automation to help generate <strong>$8.4K in e-commerce sales within 7 days</strong>. Currently a 3rd-year Computer Science student, bringing a technical edge to marketing and automation work.
-          </p>
-        </section>
-
-        <!-- CORE SKILLS -->
-        <section class="resume-block">
-          <h2 class="resume-section-title font-mono">
-            <span class="title-num">02</span> // CORE SKILLS
-          </h2>
-          <div class="resume-skills-grid">
-            <div class="skill-category-card">
-              <h3 class="skill-cat-title font-mono">Social Media Strategy & Management</h3>
-              <p class="skill-cat-desc">Content calendars, brand voice, organic community growth & distribution</p>
+          <div class="job">
+            <div class="job-head">
+              <h3 class="job-role">AI Video Automation Specialist</h3>
+              <span class="job-dates">May 2026 – Aug 2026</span>
             </div>
-
-            <div class="skill-category-card">
-              <h3 class="skill-cat-title font-mono text-red">AI Tools & Automation</h3>
-              <p class="skill-cat-desc">ChatGPT, Gemini Pro, AI video automation for scalable product & marketing content</p>
-            </div>
-
-            <div class="skill-category-card">
-              <h3 class="skill-cat-title font-mono">Design & Content Creation</h3>
-              <p class="skill-cat-desc">Canva Pro, Adobe Premiere Pro, DaVinci Resolve, graphic poster & menu design</p>
-            </div>
-
-            <div class="skill-category-card">
-              <h3 class="skill-cat-title font-mono">Website Support & Web Builds</h3>
-              <p class="skill-cat-desc">Building and maintaining brand websites, responsive landing pages, UX/UI</p>
-            </div>
-
-            <div class="skill-category-card">
-              <h3 class="skill-cat-title font-mono">Productivity & Collaboration</h3>
-              <p class="skill-cat-desc">Google Docs, Sheets, Drive, Gmail, client asynchronous communication</p>
-            </div>
-
-            <div class="skill-category-card">
-              <h3 class="skill-cat-title font-mono">Data-Driven Marketing</h3>
-              <p class="skill-cat-desc">Tracking engagement, ROAS metrics, conversion funnels & sales performance</p>
-            </div>
+            <p class="job-org">E‑commerce team</p>
+            <ul>
+              <li>Led AI‑driven video automation for the team's product content.</li>
+              <li>Contributed to <strong>$8,400 (USD) in sales and 94 products sold within 7 days</strong>.</li>
+              <li>Used AI video generation and editing tools to produce product marketing videos at scale.</li>
+            </ul>
           </div>
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section class="resume-block">
-          <h2 class="resume-section-title font-mono">
-            <span class="title-num">03</span> // EXPERIENCE
-          </h2>
-
-          <div class="resume-experience-list">
-            
-            <!-- Hello Lumpia -->
-            <div class="resume-experience-item">
-              <div class="exp-header">
-                <div>
-                  <h3 class="exp-role font-display">Social Media Manager</h3>
-                  <div class="exp-company font-mono">
-                    <span class="text-red">Hello Lumpia</span> • Jacksonville, FL
-                  </div>
-                </div>
-                <div class="exp-dates font-mono">Nov 2025 – Aug 2026</div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Built the brand's social media presence from scratch, growing it into a well-known Filipino restaurant name in Jacksonville, Florida.</li>
-                <li>Planned and produced content using Canva Pro and AI tools to establish a consistent brand voice and vibrant visual identity.</li>
-                <li>Managed day-to-day content strategy, publishing calendars, and community engagement across platforms.</li>
-              </ul>
-              <div class="exp-tags font-mono">
-                <span class="exp-tag">Brand Launch</span>
-                <span class="exp-tag">Canva Pro</span>
-                <span class="exp-tag">AI Workflows</span>
-                <span class="exp-tag">Community Growth</span>
-              </div>
-            </div>
-
-            <!-- Go Go Curry -->
-            <div class="resume-experience-item">
-              <div class="exp-header">
-                <div>
-                  <h3 class="exp-role font-display">Social Media Manager</h3>
-                  <div class="exp-company font-mono">
-                    <span class="text-red">Go Go Curry</span> • Times Square, NYC
-                  </div>
-                </div>
-                <div class="exp-dates font-mono">Sept 2024 – Jun 2026</div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Strengthened brand awareness for an iconic Japanese curry restaurant in Manhattan through consistent, targeted short-form social content.</li>
-                <li>Supported management and continuous optimization of the brand's website alongside ongoing social media efforts.</li>
-                <li>Leveraged AI tools (ChatGPT, Gemini Pro) to streamline creative ideation, copywriting, and content planning workflows.</li>
-              </ul>
-              <div class="exp-tags font-mono">
-                <span class="exp-tag">4.2M+ Short-Form Views</span>
-                <span class="exp-tag">Website Support</span>
-                <span class="exp-tag">ChatGPT / Gemini Pro</span>
-                <span class="exp-tag">NYC Food Marketing</span>
-              </div>
-            </div>
-
-            <!-- AI Video Automation E-Commerce Team -->
-            <div class="resume-experience-item">
-              <div class="exp-header">
-                <div>
-                  <h3 class="exp-role font-display">AI Video Automation Specialist</h3>
-                  <div class="exp-company font-mono">
-                    <span class="text-red">E-Commerce Team</span>
-                  </div>
-                </div>
-                <div class="exp-dates font-mono">May 2026 – Aug 2026</div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Led AI-driven video automation pipeline for e-commerce product content, directly powering the team's revenue and sales operations.</li>
-                <li>Directly contributed to <strong>$8,400 (USD) in sales and 94 products sold within a 7-day period</strong>.</li>
-                <li>Applied cutting-edge AI generative video and editing tools to rapidly accelerate video production for multi-channel product marketing at scale.</li>
-              </ul>
-              <div class="exp-tags font-mono">
-                <span class="exp-tag">$8.4K Revenue in 7 Days</span>
-                <span class="exp-tag">94 Conversions</span>
-                <span class="exp-tag">AI Video Automation</span>
-                <span class="exp-tag">Scale Production</span>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- EDUCATION & AWARDS DUAL GRID -->
-        <div class="resume-dual-grid">
-          
-          <!-- Education -->
-          <section class="resume-block">
-            <h2 class="resume-section-title font-mono">
-              <span class="title-num">04</span> // EDUCATION
-            </h2>
-            <div class="resume-edu-card">
-              <h3 class="edu-degree font-display">Bachelor of Science in Computer Science</h3>
-              <div class="edu-sub font-mono text-red">In Progress — 3rd Year</div>
-              <p class="edu-note">Bringing algorithmic logic, automation scripting, and technical web engineering to marketing ecosystems.</p>
-            </div>
-            <div class="resume-edu-card" style="margin-top: 1rem;">
-              <h3 class="edu-degree font-display" style="font-size: 1.15rem;">High School Diploma</h3>
-              <div class="edu-sub font-mono">Completed</div>
-            </div>
-          </section>
-
-          <!-- Awards & Achievements -->
-          <section class="resume-block">
-            <h2 class="resume-section-title font-mono">
-              <span class="title-num">05</span> // AWARDS & ACHIEVEMENTS
-            </h2>
-            <div class="resume-award-card">
-              <div class="award-icon font-display">🏆</div>
-              <div>
-                <h3 class="award-title font-display">Hackathon Award Recipient</h3>
-                <p class="award-desc">Multiple competitive hackathon participations with award-winning technical and design deliverables.</p>
-              </div>
-            </div>
-          </section>
-
         </div>
+      </section>
 
-        <!-- FOOTER CTA IN RESUME -->
-        <div class="resume-footer-cta font-mono">
-          <span>Ready to collaborate?</span>
-          <a href="mailto:galvinventurina@gmail.com" class="resume-cta-btn">galvinventurina@gmail.com →</a>
+      <section class="r-section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div><h3>Social media strategy</h3><p>Content calendars, brand voice, community growth and distribution</p></div>
+          <div><h3>AI tools and automation</h3><p>ChatGPT, Gemini Pro, Claude, AI video automation for product and marketing content</p></div>
+          <div><h3>Design and video</h3><p>Canva Pro, Adobe Premiere Pro, DaVinci Resolve, posters and menu design</p></div>
+          <div><h3>Websites</h3><p>Building and maintaining brand websites and responsive landing pages</p></div>
+          <div><h3>Collaboration</h3><p>Google Docs, Sheets, Drive and Gmail, async work with US clients</p></div>
+          <div><h3>Performance tracking</h3><p>Engagement and sales performance reporting</p></div>
         </div>
+      </section>
 
-      </div>
+      <section class="r-section">
+        <h2>Education</h2>
+        <div class="edu">
+          <h3>BS Computer Science</h3>
+          <p>In progress, 3rd year</p>
+          <h3>High school diploma</h3>
+          <p>Completed</p>
+        </div>
+      </section>
+
+      <section class="r-section">
+        <h2>Awards</h2>
+        <div class="edu">
+          <h3>Winner, Can You HackIT: The IBPAP Challenge (Clark)</h3>
+          <p>Team J*. Built Aigila, an Android app that matches people in Angeles City and Pampanga to government aid and livelihood programs, using Google Gemini with rule‑based eligibility checks.</p>
+        </div>
+      </section>
 
     </div>
-  </div>
+  </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/galvin-venturina-35bbb0377/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/vin_vntrn/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
-
 </html>
