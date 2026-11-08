@@ -11,7 +11,7 @@
   --bg-2: #111318;
   --text: #F5F5F7;
   --muted: #A6AAB5;
-  --faint: #6B707C;
+  --faint: #80858F;        /* 5:1 on both backgrounds, readable at label size */
   --line: #2A2D35;
   --navy: #1E3A8A;
   --navy-hover: #2647A6;
@@ -96,6 +96,15 @@ ul, ol { margin: 0; padding: 0; }
 }
 .hero-sub { max-width: 46ch; color: var(--muted); margin: 0; }
 
+/* availability pill: tells a skimming employer the one thing they need first */
+.hero-status {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--f-mono); font-size: .82rem; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px 6px 12px;
+  margin: 0 0 clamp(24px, 4vh, 40px);
+}
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--red); flex: none; }
+
 /* single page-load moment: the three hero lines rise in sequence */
 @media (prefers-reduced-motion: no-preference) {
   .js .hero-line .hl { opacity: 0; transform: translateY(0.35em); }
@@ -145,7 +154,7 @@ ul, ol { margin: 0; padding: 0; }
 .case-title { font-size: clamp(2.25rem, 5vw, 4rem); line-height: .98; margin-bottom: 10px; }
 .case-ai .case-title { font-size: clamp(1.9rem, 3.8vw, 3rem); }
 .case-where { color: var(--navy-light); font-weight: 500; margin-bottom: 1.4em; }
-.case-text > p { color: var(--muted); max-width: 52ch; }
+.case-text > p:not([class]) { color: var(--muted); max-width: 52ch; }
 .case-list { list-style: none; margin: 1.6em 0 2em; max-width: 52ch; }
 .case-list li { position: relative; padding: 10px 0 10px 22px; border-top: 1px solid var(--line); color: var(--text); font-size: .98rem; }
 .case-list li::before { content: ""; position: absolute; left: 0; top: 1.15em; width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--red); }
@@ -174,6 +183,31 @@ ul, ol { margin: 0; padding: 0; }
 .result-mid { display: block; font-family: var(--f-display); font-weight: 800; font-size: clamp(2.2rem, 4.5vw, 3.25rem); line-height: 1; letter-spacing: -0.03em; }
 .result-small { display: block; font-size: .9rem; color: rgba(255, 255, 255, .78); margin-top: 6px; }
 .result-card video { width: 100%; border-radius: 12px; margin-top: 24px; }
+
+/* Aigila build */
+.build-card { border: 1px solid var(--line); border-radius: 20px; padding: clamp(28px, 4vw, 48px); background: var(--bg-2); }
+.build-label { font-family: var(--f-mono); font-size: .85rem; color: var(--faint); margin-bottom: 12px; }
+.build-stats { margin: 0; }
+.build-stats div { display: grid; grid-template-columns: 4.75rem minmax(0, 1fr); gap: 20px; align-items: baseline; padding: 20px 0; border-top: 1px solid var(--line); }
+.build-stats div:first-child { border-top: 0; padding-top: 8px; }
+.build-stats dt { font-family: var(--f-display); font-weight: 800; font-size: clamp(2.6rem, 5vw, 3.75rem); line-height: 1; letter-spacing: -0.04em; }
+.build-stats div:first-child dt { color: var(--red); }
+.build-stats dd { margin: 0; color: var(--muted); max-width: 30ch; }
+
+/* ---------- Services ---------- */
+.services { padding: clamp(80px, 12vh, 140px) 0; background: var(--bg-2); border-top: 1px solid var(--line); }
+.service-grid { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(24px, 3vw, 40px); }
+.service { border-top: 1px solid var(--line); padding-top: 24px; display: flex; flex-direction: column; }
+.service-icon { width: 34px; height: 34px; fill: none; stroke: var(--navy-light); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 20px; }
+.service-icon .pi-dash { stroke-dasharray: 5 4.5; }
+.service h3 { font-size: 1.35rem; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 10px; }
+.service p { color: var(--muted); font-size: .98rem; }
+.service .service-tools { margin: auto 0 0; padding-top: 8px; font-family: var(--f-mono); font-size: .78rem; line-height: 1.5; color: var(--faint); }
+
+.terms { margin: clamp(56px, 8vh, 80px) 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 40px); }
+.terms div { border-top: 1px solid var(--line); padding-top: 20px; }
+.terms dt { font-family: var(--f-display); font-weight: 800; font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1; letter-spacing: -0.03em; margin-bottom: 10px; }
+.terms dd { margin: 0; color: var(--muted); max-width: 30ch; }
 
 /* ---------- Closing CTA ---------- */
 .cta { padding: clamp(96px, 16vh, 180px) 0; border-top: 1px solid var(--line); }
@@ -209,6 +243,15 @@ ul, ol { margin: 0; padding: 0; }
   .journey-copy .lede { order: -2; margin-bottom: 1.5rem; }
   .beats { order: 0; }
   .case { grid-template-columns: 1fr; }
+}
+@media (max-width: 1000px) {
+  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
+}
+@media (max-width: 640px) {
+  .service-grid, .terms { grid-template-columns: 1fr; }
+  .service-grid { row-gap: 32px; }
+  .terms { gap: 24px; }
+  .build-stats div { grid-template-columns: 4.25rem minmax(0, 1fr); gap: 16px; }
 }
 @media (max-width: 560px) {
   body { font-size: 1rem; }
@@ -257,10 +300,31 @@ ul, ol { margin: 0; padding: 0; }
   .r-section { grid-template-columns: 1fr; gap: 12px; }
   .skills { grid-template-columns: 1fr; }
 }
+/* "Save as PDF": one tight page an employer can attach, not three half-empty ones */
+@page { margin: 12mm 14mm; }
 @media print {
   :root { --bg: #fff; --bg-2: #fff; --text: #111; --muted: #333; --faint: #555; --line: #ccc; --navy-light: #1E3A8A; }
+  html { font-size: 11.5px; }
   .site-header, .resume-actions, .site-footer { display: none !important; }
-  body { font-size: 10.5pt; }
+  body { font-size: 1rem; line-height: 1.42; }
   .resume-page { padding: 0; }
-  .r-section { padding: 14px 0; break-inside: avoid; }
+  .resume-wrap { max-width: none; padding: 0; }
+  .resume-top { margin-bottom: 10px; }
+  .resume-name { font-size: 2.9rem; }
+  .resume-role { margin: 6px 0 10px; }
+  .resume-contacts { gap: 4px 18px; }
+  .r-section { padding: 10px 0; grid-template-columns: 92px minmax(0, 1fr); gap: 16px; break-inside: auto; }
+  .r-section h2 { padding-top: 2px; }
+  .r-summary, .job li { max-width: none; }
+  .job { break-inside: avoid; }
+  .job + .job { margin-top: 12px; }
+  .job-role { font-size: 1.25rem; }
+  .job-org { margin: 2px 0 4px; }
+  .job li { margin: 2px 0; }
+  .skills { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 20px; }
+  .edu h3 { font-size: 1.1rem; }
+  .edu p { margin: 2px 0 6px; }
+  /* print the full LinkedIn address instead of the word "LinkedIn" */
+  .resume-contacts a[data-print] { font-size: 0; }
+  .resume-contacts a[data-print]::after { content: attr(data-print); font-size: .95rem; }
 }
