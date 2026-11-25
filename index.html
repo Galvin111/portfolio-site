@@ -6,7 +6,7 @@
   <title>Galvin Venturina — social, video, design and web</title>
   <meta name="description" content="Galvin Venturina designs the content, runs the accounts and builds the sites for restaurant and e-commerce brands. Based in Pampanga, Philippines. Open to part-time and project work.">
   <link rel="canonical" href="https://galvin111.github.io/portfolio-site/">
-  <meta name="theme-color" content="#0B0C10">
+  <meta name="theme-color" content="#EFEAE1">
 
   <!-- Link previews (OnlineJobs, LinkedIn, Messenger, Slack) -->
   <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
   <meta property="og:image" content="https://galvin111.github.io/portfolio-site/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Galvin Venturina: the one who designs it, posts it, and builds where it lives">
+  <meta property="og:image:alt" content="Galvin Venturina in a burgundy suit, next to the line: social, video, design and web for restaurant and e-commerce brands">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -25,8 +25,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261109">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..900&family=Caveat:wght@500;700&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/me/portrait-cutout.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css?v=20261125c">
 </head>
 <body>
 
@@ -34,8 +35,9 @@
 
   <header class="site-header">
     <div class="wrap header-row">
-      <a href="#top" class="wordmark">Galvin Venturina</a>
+      <a href="#top" class="wordmark"><span class="mark" aria-hidden="true">G</span>Galvin Venturina</a>
       <nav class="site-nav" aria-label="Main">
+        <span class="open-pill"><span class="dot" aria-hidden="true"></span>Open to part‑time &amp; project work</span>
         <a href="#work">Work</a>
         <a href="resume.html">Resume</a>
         <a href="#contact" class="nav-contact">Contact</a>
@@ -45,186 +47,301 @@
 
   <main id="top">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="wrap">
-        <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to part‑time and project work</p>
-        <h1 class="hero-line">
-          <span class="hl">the one who designs it,</span>
-          <span class="hl">posts it, and builds</span>
-          <span class="hl">where it lives</span>
-        </h1>
-        <div class="hero-foot">
-          <p class="hero-sub">Social media, video, design and websites for restaurant and e‑commerce brands. Based in Pampanga, Philippines, working with clients in the US.</p>
-          <a href="#work" class="text-link">Have a look</a>
-        </div>
-      </div>
-    </section>
+    <!-- HERO: scrapbook spread -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
 
-    <!-- ABOUT + JOURNEY -->
-    <section class="journey" id="about" aria-labelledby="about-title">
-      <div class="wrap journey-grid">
-        <div class="journey-copy">
-          <h2 id="about-title" class="section-title">Hey, I'm Galvin.</h2>
-          <p class="lede">I make the posts, run the accounts and build the sites, so a brand gets one person who sees the whole picture. I'm also a 3rd‑year Computer Science student, which is why most of my workflow runs on AI and automation.</p>
-
-          <ol class="beats">
-            <li class="beat" data-beat="ring">
-              <span class="beat-when">5 years ago</span>
-              <p>Started in graphic design.</p>
-            </li>
-            <li class="beat" data-beat="play">
-              <span class="beat-when">Video followed.</span>
-              <p>Picked up editing. Same eye, moving footage.</p>
-            </li>
-            <li class="beat" data-beat="heart">
-              <span class="beat-when">Then I went where the work lives.</span>
-              <p>Started managing social — not just making the asset, owning the account.</p>
-            </li>
-            <li class="beat" data-beat="share">
-              <span class="beat-when">So I learned to build the rest.</span>
-              <p>Websites came last — the platforms these brands actually run on.</p>
-            </li>
-          </ol>
+        <div class="hero-portrait">
+          <picture>
+            <source srcset="assets/me/portrait-cutout.webp" type="image/webp">
+            <img src="assets/me/portrait-cutout.png" alt="Galvin Venturina in a burgundy suit, smiling with one hand in a pocket" width="1493" height="2527">
+          </picture>
+          <p class="portrait-name" aria-hidden="true">galvin<br>venturina<span>content + web</span></p>
         </div>
 
-        <div class="icon-stage" aria-hidden="true">
-          <div class="icon-panel">
-            <svg class="pi" data-icon="ring" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" class="pi-dash"/><circle cx="24" cy="24" r="13"/></svg>
-            <svg class="pi" data-icon="play" viewBox="0 0 48 48"><path d="M17 12.5v23L36 24z"/></svg>
-            <svg class="pi" data-icon="heart" viewBox="0 0 48 48"><path d="M24 39S8 29.6 8 18.6C8 13.3 12 9.5 16.8 9.5c3.1 0 5.6 1.7 7.2 4.2 1.6-2.5 4.1-4.2 7.2-4.2C36 9.5 40 13.3 40 18.6 40 29.6 24 39 24 39z"/></svg>
-            <svg class="pi" data-icon="share" viewBox="0 0 48 48"><path d="M41 8 21 27M41 8 29 41l-8-14-14-8z"/></svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section class="work" id="work" aria-labelledby="work-title">
-      <div class="wrap">
-        <h2 id="work-title" class="section-title">Selected work</h2>
-
-        <!-- Case 1: Hello Lumpia -->
-        <article class="case" aria-labelledby="hl-title">
-          <div class="case-text">
-            <p class="case-meta">Social media · Nov 2025 – Aug 2026</p>
-            <h3 id="hl-title" class="case-title">Hello Lumpia</h3>
-            <p class="case-where">Filipino kitchen in Jacksonville, Florida</p>
-            <p>I built their social presence from scratch and helped turn a new Filipino kitchen into a name people know around Jacksonville.</p>
-            <ul class="case-list">
-              <li>Content planned and designed in Canva Pro, with AI tools to keep a consistent voice and look</li>
-              <li>Menu drops, party‑tray promos, and customer reviews turned into posts</li>
-              <li>Day‑to‑day content strategy and community engagement</li>
-              <li>Featured in collab Reels with Yelp Jacksonville and Stuff To Do in Jacksonville</li>
-            </ul>
-            <a class="text-link" href="https://www.instagram.com/hello.lumpia/" target="_blank" rel="noopener">See @hello.lumpia on Instagram</a>
+        <div class="hero-content">
+          <div class="hero-head">
+            <h1 id="hero-title" class="hero-title">Hi! I'm Gal<span class="accent">vin</span> Venturina</h1>
+            <p class="hero-where">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Pampanga, Philippines <span class="sep" aria-hidden="true">·</span> working with US brands
+            </p>
+            <p class="open-pill hero-status"><span class="dot" aria-hidden="true"></span>Open to part‑time &amp; project work</p>
           </div>
 
-          <div class="feed" role="list" aria-label="Posts I designed for Hello Lumpia">
-            <figure role="listitem"><img src="assets/work/hl_turon.jpg" alt="Turon post: banana lumpia with caramel drizzle over a red title band" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_party_trays.jpg" alt="Party trays catering post with vegetable lumpia and chicken caldereta prices" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_review_google.jpg" alt="Google review post: 'You said it. We framed it.'" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_lumpia.jpg" alt="Authentic Filipino lumpia menu post priced at $9.50" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_review_yelp.jpg" alt="Yelp review post: 'Good spot for some Filipino food. Nice and clean.'" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_calamansi.jpg" alt="Mango calamansi juice product post" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_feeding_crowd.jpg" alt="'Feeding a crowd? Hello, tray.' party tray post" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_party_party.jpg" alt="'Party party party' tray promo from $54" loading="lazy" width="800" height="1000"></figure>
-            <figure role="listitem"><img src="assets/work/hl_review_crunchy.jpg" alt="Yelp review post: 'Heard you loud and crunchy.'" loading="lazy" width="800" height="1000"></figure>
-          </div>
-        </article>
-
-        <!-- Case 2: AI e-commerce video -->
-        <article class="case case-ai" aria-labelledby="ai-title">
-          <div class="case-text">
-            <p class="case-meta">AI video automation · May – Aug 2026</p>
-            <h3 id="ai-title" class="case-title">AI product videos for an e‑commerce team</h3>
-            <p>I led AI‑driven video automation for the team's product content, using AI tools to produce marketing videos at scale and keep the store's sales supplied with fresh creative.</p>
+          <div class="hero-intro">
+            <p>I make the posts, run the accounts and build the sites, so a brand gets <strong>one person who sees the whole picture</strong>: the feed, the face, and the website it all points to.</p>
+            <p>I work with <strong>restaurant and e‑commerce brands</strong>. I'm also a 3rd‑year Computer Science student, which is why most of my workflow runs on <strong>AI and automation</strong>.</p>
           </div>
 
-          <div class="result-card">
-            <p class="result-label">Team sales in one week, backed by the AI product videos</p>
-            <p class="result-big">$8,400</p>
-            <div class="result-row">
-              <div><span class="result-mid">94</span><span class="result-small">products sold</span></div>
-              <div><span class="result-mid">7</span><span class="result-small">days</span></div>
+          <div class="info">
+            <div class="info-col">
+              <h2 class="info-title">Experience</h2>
+              <ol class="xp">
+                <li>
+                  <span class="xp-years">2025<br>2026</span>
+                  <div>
+                    <p class="xp-org">Hello Lumpia, Jacksonville</p>
+                    <p class="xp-role">Social Media Manager</p>
+                    <p class="xp-note">Built their social presence from scratch.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="xp-years">2026</span>
+                  <div>
+                    <p class="xp-org">E‑commerce team</p>
+                    <p class="xp-role">AI Video Automation</p>
+                    <p class="xp-note">$8.4K in sales in 7 days.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="xp-years">2024<br>2026</span>
+                  <div>
+                    <p class="xp-org">Go Go Curry, Times Square NYC</p>
+                    <p class="xp-role">Social Media Manager + website</p>
+                  </div>
+                </li>
+              </ol>
             </div>
-            <!-- When sample videos are ready, add them here, e.g.
-                 <video src="assets/work/ecom_sample_1.mp4" muted playsinline loop controls></video> -->
-          </div>
-        </article>
 
-        <!-- Case 3: Aigila (hackathon win) -->
-        <article class="case case-build" aria-labelledby="aigila-title">
-          <div class="case-text">
-            <p class="case-meta">AI app · Hackathon · Aug 2026</p>
-            <h3 id="aigila-title" class="case-title">Aigila</h3>
-            <p class="case-where">Winner, Can You HackIT: The IBPAP Challenge (Clark)</p>
-            <p>A four‑person team build (team J*). People describe their situation in plain Taglish, and the Android app matches them to government aid and livelihood programs in Angeles City and Pampanga, with the sources cited.</p>
-            <p>Google Gemini reads the request. Rule‑based checks, not the model, decide who qualifies, so the same situation always gets the same answer.</p>
+            <div class="info-col">
+              <h2 class="info-title">Studies</h2>
+              <p class="info-line"><strong>BS Computer Science</strong><br>3rd year, in progress</p>
+
+              <h2 class="info-title">Focus</h2>
+              <ul class="focus">
+                <li>Social media</li>
+                <li>Video editing</li>
+                <li>Design</li>
+                <li>Websites</li>
+              </ul>
+
+              <h2 class="info-title">Tools</h2>
+              <ul class="tools">
+                <li>Canva Pro</li>
+                <li>CapCut</li>
+                <li>Premiere Pro</li>
+                <li>DaVinci Resolve</li>
+                <li>Veo</li>
+                <li>ChatGPT</li>
+                <li>Gemini</li>
+                <li>Claude</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="build-card">
-            <p class="build-label">Pitched to judges in 7 minutes</p>
-            <dl class="build-stats">
-              <div><dt>9</dt><dd>local aid programs, each checked against its source</dd></div>
-              <div><dt>14</dt><dd>real Angeles City government forms</dd></div>
-              <div><dt>4</dt><dd>people on the team</dd></div>
-            </dl>
+          <div class="polaroids">
+            <p class="scribble polaroids-note" aria-hidden="true">a few posts I made ↓</p>
+            <a class="polaroid" href="#work" style="--r:-4deg">
+              <img src="assets/work/hl_lumpia.jpg" alt="Lumpia menu post for Hello Lumpia, priced at $9.50" width="800" height="1000">
+              <span class="polaroid-cap">menu drop!</span>
+            </a>
+            <a class="polaroid" href="#work" style="--r:2.5deg">
+              <img src="assets/work/hl_party_party.jpg" alt="'Party party party' tray promo for Hello Lumpia, from $54" width="800" height="1000">
+              <span class="polaroid-cap">party trays</span>
+            </a>
+            <a class="polaroid" href="#work" style="--r:-1.5deg">
+              <img src="assets/work/hl_review_crunchy.jpg" alt="Yelp review turned into a post: 'Heard you loud and crunchy.'" width="800" height="1000">
+              <span class="polaroid-cap">reviews → posts <span aria-hidden="true">:)</span></span>
+            </a>
           </div>
-        </article>
+        </div>
+
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="services" id="services" aria-labelledby="services-title">
+    <!-- SERVICES: four pinned notes, in the order the skills arrived -->
+    <section class="story torn" id="services" aria-labelledby="services-title">
       <div class="wrap">
-        <h2 id="services-title" class="section-title">What you can hand me</h2>
+        <div class="section-head">
+          <p class="label">What you can hand me</p>
+          <h2 id="services-title" class="section-title">One skill kept leading to the <span class="accent">next</span>.</h2>
+          <p class="lede">I didn't plan to do all four. Each one showed up because the last one needed it, so you can hand me one or all of them.</p>
+        </div>
 
-        <ul class="service-grid">
-          <li class="service">
-            <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 12.5v23L36 24z"/></svg>
-            <h3>Short‑form and AI video</h3>
-            <p>Reels, TikToks and Shorts cut from your footage, with captions and pacing for each platform. Product videos made with AI tools when there's nothing to film.</p>
-            <p class="service-tools">CapCut · Premiere Pro · DaVinci Resolve · Veo</p>
-          </li>
-          <li class="service">
-            <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 39S8 29.6 8 18.6C8 13.3 12 9.5 16.8 9.5c3.1 0 5.6 1.7 7.2 4.2 1.6-2.5 4.1-4.2 7.2-4.2C36 9.5 40 13.3 40 18.6 40 29.6 24 39 24 39z"/></svg>
-            <h3>Social media management</h3>
-            <p>Content calendar, captions, posting and replies. Menu drops, promos and your best reviews turned into posts.</p>
-            <p class="service-tools">Canva Pro · ChatGPT · Gemini · Claude</p>
-          </li>
-          <li class="service">
-            <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="19" class="pi-dash"/><circle cx="24" cy="24" r="13"/></svg>
-            <h3>Graphic design</h3>
+        <ol class="notes">
+          <li class="note note-sticky" data-reveal>
+            <span class="note-step">01 · 5 years ago</span>
+            <svg class="note-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="19" stroke-dasharray="5 4.5"/><circle cx="24" cy="24" r="13"/></svg>
+            <h3 class="note-title">Design</h3>
             <p>Social posts, menus, flyers and posters that look like they came from one brand.</p>
-            <p class="service-tools">Canva Pro</p>
+            <p class="note-tools">Canva Pro</p>
           </li>
-          <li class="service">
-            <svg class="service-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M41 8 21 27M41 8 29 41l-8-14-14-8z"/></svg>
-            <h3>Websites</h3>
+          <li class="note note-index" data-reveal>
+            <span class="note-step">02 · Video followed</span>
+            <svg class="note-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M17 12.5v23L36 24z"/></svg>
+            <h3 class="note-title">Short‑form + AI&nbsp;video</h3>
+            <p>Reels, TikToks and Shorts cut from your footage, with captions and pacing for each platform. Product videos made with AI tools when there's nothing to film.</p>
+            <p class="note-tools">CapCut · Premiere Pro · DaVinci Resolve · Veo</p>
+          </li>
+          <li class="note note-page" data-reveal>
+            <span class="note-step">03 · Where the work lives</span>
+            <svg class="note-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 39S8 29.6 8 18.6C8 13.3 12 9.5 16.8 9.5c3.1 0 5.6 1.7 7.2 4.2 1.6-2.5 4.1-4.2 7.2-4.2C36 9.5 40 13.3 40 18.6 40 29.6 24 39 24 39z"/></svg>
+            <h3 class="note-title">Social media</h3>
+            <p>Content calendar, captions, posting and replies. Menu drops, promos and your best reviews turned into posts.</p>
+            <p class="note-tools">Canva Pro · ChatGPT · Gemini · Claude</p>
+          </li>
+          <li class="note note-tag" data-reveal>
+            <span class="note-step">04 · Then the rest</span>
+            <svg class="note-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M41 8 21 27M41 8 29 41l-8-14-14-8z"/></svg>
+            <h3 class="note-title">Websites</h3>
             <p>Small‑business sites and landing pages, built and kept up to date.</p>
-            <p class="service-tools">Squarespace · Antigravity</p>
+            <p class="note-tools">Squarespace · Antigravity</p>
           </li>
-        </ul>
+        </ol>
 
         <dl class="terms">
-          <div><dt>Mon–Fri</dt><dd>Part‑time and project work</dd></div>
-          <div><dt>24 hours</dt><dd>Turnaround on edits and posts</dd></div>
-          <div><dt>UTC+8</dt><dd>Async with US clients, so work is waiting when you wake up</dd></div>
+          <div class="ticket" data-reveal><dt>Mon–Fri</dt><dd>Part‑time and project work</dd></div>
+          <div class="ticket" data-reveal><dt>24 hours</dt><dd>Turnaround on edits and posts</dd></div>
+          <div class="ticket" data-reveal><dt>UTC+8</dt><dd>Async with US clients, so work is waiting when you wake up</dd></div>
         </dl>
       </div>
     </section>
 
-    <!-- CLOSING CTA -->
-    <section class="cta" id="contact" aria-labelledby="cta-title">
+    <!-- WORK -->
+    <section class="work torn" id="work" aria-labelledby="work-title">
       <div class="wrap">
-        <h2 id="cta-title" class="cta-line">Got a brand that needs a feed, a face, and a site? Let's talk.</h2>
-        <div class="cta-actions">
-          <a class="btn" href="mailto:galvinventurina@gmail.com">Email me</a>
-          <button class="btn btn-ghost" id="copy-email" type="button" data-email="galvinventurina@gmail.com">Copy email address</button>
-          <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+        <div class="section-head section-head-row">
+          <div>
+            <p class="label">The proof</p>
+            <h2 id="work-title" class="section-title">Selected work</h2>
+          </div>
+          <p class="scribble work-note" aria-hidden="true">real clients, real posts</p>
         </div>
-        <p class="cta-email">galvinventurina@gmail.com</p>
+
+        <!-- 01: Hello Lumpia -->
+        <article class="case-lumpia" aria-labelledby="hl-title">
+          <div class="case-file">
+            <p class="case-no">01</p>
+            <p class="case-meta">Social media · Nov 2025 – Aug 2026</p>
+            <h3 id="hl-title" class="case-title">Hello Lumpia</h3>
+            <p class="case-where">Filipino kitchen in Jacksonville, Florida</p>
+            <p class="case-desc">I built their social presence from scratch and helped turn a new Filipino kitchen into a name people know around Jacksonville.</p>
+            <ul class="case-list">
+              <li>Content planned and designed in Canva Pro, with AI tools to keep a consistent voice and look</li>
+              <li>Menu drops, party‑tray promos, and customer reviews turned into posts</li>
+              <li>Day‑to‑day content strategy and community engagement</li>
+            </ul>
+            <p class="case-feature"><span>Featured in collab Reels with</span> Yelp Jacksonville &amp; Stuff To Do in Jacksonville</p>
+            <a class="text-link" href="https://www.instagram.com/hello.lumpia/" target="_blank" rel="noopener">See @hello.lumpia on Instagram</a>
+          </div>
+
+          <div class="pinboard" role="list" aria-label="Posts I designed for Hello Lumpia">
+            <figure role="listitem" style="--r:-2deg"><img src="assets/work/hl_turon.jpg" alt="Turon post: banana lumpia with caramel drizzle over a red title band" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:1.5deg" class="taped"><img src="assets/work/hl_party_trays.jpg" alt="Party trays catering post with vegetable lumpia and chicken caldereta prices" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:-1deg"><img src="assets/work/hl_review_google.jpg" alt="Google review post: 'You said it. We framed it.'" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:2deg" class="taped"><img src="assets/work/hl_lumpia.jpg" alt="Authentic Filipino lumpia menu post priced at $9.50" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:-1.5deg"><img src="assets/work/hl_review_yelp.jpg" alt="Yelp review post: 'Good spot for some Filipino food. Nice and clean.'" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:1deg"><img src="assets/work/hl_calamansi.jpg" alt="Mango calamansi juice product post" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:1.5deg"><img src="assets/work/hl_feeding_crowd.jpg" alt="'Feeding a crowd? Hello, tray.' party tray post" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:-2deg" class="taped"><img src="assets/work/hl_party_party.jpg" alt="'Party party party' tray promo from $54" loading="lazy" width="800" height="1000"></figure>
+            <figure role="listitem" style="--r:1deg"><img src="assets/work/hl_review_crunchy.jpg" alt="Yelp review post: 'Heard you loud and crunchy.'" loading="lazy" width="800" height="1000"></figure>
+          </div>
+        </article>
+
+        <div class="case-pair">
+          <!-- 02: AI e-commerce video -->
+          <article class="case-small" aria-labelledby="ai-title">
+            <p class="case-no">02</p>
+            <p class="case-meta">AI video automation · May – Aug 2026</p>
+            <h3 id="ai-title" class="case-title case-title-sm">AI product videos for an e‑commerce team</h3>
+            <p class="case-desc">I led AI‑driven video automation for the team's product content, producing marketing videos at scale to keep the store supplied with fresh creative.</p>
+
+            <div class="receipt-wrap" data-reveal>
+              <div class="receipt">
+                <p class="receipt-head">E‑commerce team<br>One week of product videos</p>
+                <p class="result-label">Team sales in one week, backed by the AI product videos</p>
+                <p class="result-big">$8,400</p>
+                <div class="result-row">
+                  <div><span class="result-mid">94</span><span class="result-small">products sold</span></div>
+                  <div><span class="result-mid">7</span><span class="result-small">days</span></div>
+                </div>
+                <p class="receipt-foot">*** made with AI video tools ***</p>
+                <span class="receipt-stamp" aria-hidden="true">Sold ×94</span>
+                <!-- When sample videos are ready, add them here, e.g.
+                     <video src="assets/work/ecom_sample_1.mp4" muted playsinline loop controls></video> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- 03: Go Go Curry -->
+          <article class="case-small" aria-labelledby="gg-title">
+            <p class="case-no">03</p>
+            <p class="case-meta">Social media + website · Sept 2024 – Jun 2026</p>
+            <h3 id="gg-title" class="case-title case-title-sm">Go Go Curry, Times Square</h3>
+            <p class="case-desc">A Japanese curry spot in Manhattan. I ran their short‑form social and built the website it all points to.</p>
+
+            <div class="index-card" data-reveal>
+              <p class="index-card-title">Go Go Curry <span>— NYC</span></p>
+              <ul>
+                <li>Consistent, targeted short‑form content to grow brand awareness</li>
+                <li>Built and managed the brand's website alongside the socials</li>
+                <li>ChatGPT and Gemini Pro for faster ideas, copy and planning</li>
+              </ul>
+              <span class="pin" aria-hidden="true"></span>
+            </div>
+          </article>
+        </div>
+
+        <!-- 04: Aigila (hackathon win) -->
+        <article class="case-build" aria-labelledby="aigila-title">
+          <div>
+            <p class="case-no">04</p>
+            <p class="case-meta">AI app · Hackathon · Aug 2026</p>
+            <h3 id="aigila-title" class="case-title case-title-sm">Aigila</h3>
+            <p class="case-where">Winner, Can You HackIT: The IBPAP Challenge (Clark)</p>
+            <p class="case-desc">A four‑person team build (team J*). People describe their situation in plain Taglish, and the Android app matches them to government aid and livelihood programs in Angeles City and Pampanga, with the sources cited.</p>
+            <p class="case-desc">Google Gemini reads the request. Rule‑based checks, not the model, decide who qualifies, so the same situation always gets the same answer.</p>
+          </div>
+
+          <div class="badge-wrap" data-reveal>
+            <div class="badge">
+              <p class="badge-event">Can You HackIT <span>IBPAP Challenge · Clark</span></p>
+              <p class="badge-win">Winner</p>
+              <p class="badge-team">Team J* <span>· pitched to judges in 7 minutes</span></p>
+              <dl class="build-stats">
+                <div><dt>9</dt><dd>local aid programs, each checked against its source</dd></div>
+                <div><dt>14</dt><dd>real Angeles City government forms</dd></div>
+                <div><dt>4</dt><dd>people on the team</dd></div>
+              </dl>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT: postcard -->
+    <section class="contact torn" id="contact" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="postcard" data-reveal>
+          <div class="pc-message">
+            <p class="label">Contact</p>
+            <h2 id="cta-title" class="cta-line">Got a brand that needs a feed, a face, and a site? <span class="accent">Let's talk.</span></h2>
+            <div class="cta-actions">
+              <a class="btn" href="mailto:galvinventurina@gmail.com">Email me</a>
+              <button class="btn btn-ghost" id="copy-email" type="button" data-email="galvinventurina@gmail.com">Copy email address</button>
+              <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="pc-address">
+            <div class="pc-top">
+              <div class="postmark" aria-hidden="true">
+                <span>Pampanga · PH</span>
+                <strong data-clock>--:--</strong>
+                <span>local time</span>
+              </div>
+              <div class="stamp-photo">
+                <img src="assets/me/portrait-stamp.jpg" alt="" width="640" height="800" loading="lazy">
+              </div>
+            </div>
+            <dl class="pc-lines">
+              <div><dt>To</dt><dd><a href="mailto:galvinventurina@gmail.com">galvinventurina@gmail.com</a></dd></div>
+              <div><dt>From</dt><dd>Galvin Venturina, Pampanga, Philippines</dd></div>
+              <div><dt>Re</dt><dd>Part‑time and project work</dd></div>
+            </dl>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -236,10 +353,11 @@
         <li><a href="https://www.instagram.com/vin_vntrn/" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="resume.html">Resume</a></li>
       </ul>
-      <p class="local-time">Pampanga, PH — <time id="clock">--:--</time> local time</p>
+      <p class="local-time">Pampanga, PH — <time data-clock>--:--</time> local time</p>
+      <a class="to-top" href="#top">Back to top ↑</a>
     </div>
   </footer>
 
-  <script src="script.js?v=20261109"></script>
+  <script src="script.js?v=20261125c"></script>
 </body>
 </html>
